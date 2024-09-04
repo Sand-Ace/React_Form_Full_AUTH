@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 
+import Button from "../UI/Button";
+
 const DashboardPage = () => {
   return (
     <motion.div
@@ -50,14 +52,7 @@ const DashboardPage = () => {
         transition={{ delay: 0.3 }}
         className="mt-4"
       >
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          transition={{ type: "spring", stiffness: 200 }}
-          className="w-full py-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold rounded-lg shadow-lg hover:from-green-600 hover:to-emerald-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900"
-        >
-          Logout
-        </motion.button>
+        <Button>Log out</Button>
       </motion.div>
     </motion.div>
   );
